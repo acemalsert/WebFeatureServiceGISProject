@@ -112,7 +112,7 @@ public class GetFeatureGUI extends javax.swing.JFrame {
         GetFeature getFeature = new GetFeature(serviceURL, SERVICE, VERSION, REQUEST, TYPENAME, SRSNAME);
         finalURL = getFeature.toString();
         Authenticator.authenticateAndDownload(finalURL
-                ,"cbsdemouser","q3b8f+r*", "C:\\Users\\ACS\\Desktop\\GetFeature.txt");
+                ,"username","password", "C:\\Users\\ACS\\Desktop\\GetFeature.txt");
         IGetFeatureXmlConverter.getFeatureConverter("C:\\Users\\ACS\\Desktop\\GetFeature.txt");
     }
 
