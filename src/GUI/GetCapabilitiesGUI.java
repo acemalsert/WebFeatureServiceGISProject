@@ -85,7 +85,7 @@ public class GetCapabilitiesGUI extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         GetCapabilities gc = new GetCapabilities(serviceURL, SERVICE, VERSION, REQUEST);
         finalURL = gc.toString();
-        Authenticator.authenticateAndDownload("http://cbsservis.tkgm.gov.tr/tkgm.ows/wfs?SERVICE=WFS&Version=1.0.0&REQUEST=Getcapabilities"
+        Authenticator.authenticateAndDownload(finalURL
                 ,"username","password", "C:\\Users\\ACS\\Desktop\\GetCapabilities.txt");
         IGetCapabilitiesXmlConverter.getCapabilitiesConverter("C:\\Users\\ACS\\Desktop\\GetCapabilities.txt");
     }
