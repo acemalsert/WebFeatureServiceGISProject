@@ -18,7 +18,7 @@ public class GetCapabilities extends Functions implements IGetCapabilitiesXmlCon
     // Class tester
     public static void main(String [] args){
         Authenticator.authenticateAndDownload("http://cbsservis.tkgm.gov.tr/tkgm.ows/wfs?SERVICE=WFS&Version=1.0.0&REQUEST=Getcapabilities"
-                ,"cbsdemouser","q3b8f+r*", "C:\\Users\\ACS\\Desktop\\GetCapabilities.txt");
+                ,"username","password", "C:\\Users\\ACS\\Desktop\\GetCapabilities.txt");
         IGetCapabilitiesXmlConverter.getCapabilitiesConverter("C:\\Users\\ACS\\Desktop\\GetCapabilities.txt");
     }
 }
