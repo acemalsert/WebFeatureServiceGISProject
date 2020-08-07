@@ -36,7 +36,6 @@ public class DescribeFeatureTypeGUI extends javax.swing.JFrame {
 
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
         typeNameComboBox = new javax.swing.JComboBox<>();
@@ -112,7 +111,7 @@ public class DescribeFeatureTypeGUI extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>
+    }
 
     private void typeNameComboBoxActionPerformed(java.awt.event.ActionEvent evt) {
         TYPENAME= String.valueOf(typeNameComboBox.getSelectedItem());
